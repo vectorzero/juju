@@ -8,6 +8,8 @@
       </div>
     </div>
 
+    <div>狗浪在屙屎</div>
+
     <div class="usermotto">
       <div class="user-motto">
         <card :text="motto"></card>

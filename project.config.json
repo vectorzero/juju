@@ -9,7 +9,7 @@
 	},
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
-	"appid": "touristappid",
+	"appid": "wxb91faa4a9a54e3ea",
 	"projectname": "juju",
 	"condition": {
 		"search": {
