@@ -13,7 +13,7 @@
       <div class="main-view-item itemIII">现</div>
       <div class="main-view-item itemIV">发</div>
       <div class="main-view-item itemV">了</div>
-      <div class="main-view-item itemVI">华点</div>
+      <div class="main-view-item itemVI"><a href="/pages/contact/main">华点</a></div>
     </div>
     <div class="bot-index" v-else>
       <a class="ani-text" href="/pages/counter/main">JuJu</a>
