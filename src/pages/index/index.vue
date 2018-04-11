@@ -8,12 +8,17 @@
       </div>
     </div>
     <div class="bot-content" v-if="isShowMenu">
-      <div class="main-view-item itemI">盲生</div>
-      <div class="main-view-item itemII">你</div>
-      <div class="main-view-item itemIII">现</div>
-      <div class="main-view-item itemIV">发</div>
-      <div class="main-view-item itemV">了</div>
-      <div class="main-view-item itemVI"><a href="/pages/contact/main">华点</a></div>
+      <div class="main-view-item itemI"><img class="icon-game" :src="iconGame" /><span>小游戏</span></div>
+      <div class="main-view-item itemII"><img class="icon-contact" :src="iconContact" /><span>联系我们</span></div>
+      <div class="main-view-item itemIII"><img class="icon-addition" :src="iconAddition" /><span>发起聚会</span></div>
+      <div class="main-view-item itemIV"><img class="icon-camera" :src="iconCamera" /><span>美好回忆</span></div>
+      <div class="main-view-item itemV"><img class="icon-star" :src="iconStar" /><span>星星点灯</span></div>
+      <div class="main-view-item itemVI">
+        <a href="/pages/contact/main">
+          <img class="icon-fire" :src="iconFire" />
+          <span>玩火</span>
+        </a>
+      </div>
     </div>
     <div class="bot-index" v-else>
       <a class="ani-text" href="/pages/counter/main">JuJu</a>
@@ -42,10 +47,22 @@
 
 <script>
 import card from '@/components/card'
+import iconGame from '@/assets/images/game.png'
+import iconContact from '@/assets/images/contact.png'
+import iconAddition from '@/assets/images/addition.png'
+import iconCamera from '@/assets/images/camera.png'
+import iconStar from '@/assets/images/star.png'
+import iconFire from '@/assets/images/fire.png'
 
 export default {
   data () {
     return {
+      iconGame: iconGame,
+      iconContact: iconContact,
+      iconAddition: iconAddition,
+      iconCamera: iconCamera,
+      iconStar: iconStar,
+      iconFire: iconFire,
       motto: 'Hello World',
       userInfo: {},
       isShowMenu: false,
@@ -68,7 +85,8 @@ export default {
         success: () => {
           wx.getUserInfo({
             success: (res) => {
-              this.userInfo = res.userInfo
+              this.userInfo = res.userInfo;
+              console.log(this.userInfo);
             }
           })
         }
@@ -192,11 +210,24 @@ export default {
   }
   .main-view-item {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
     flex: auto;
     color: white;
+  }
+  .main-view-item a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-view-item img {
+    width: 50%;
+    height: 50%;
   }
   .itemI {
     transform: rotateX(-90deg);
