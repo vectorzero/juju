@@ -9,17 +9,22 @@
     </div>
     <div class="bot-content" v-if="isShowMenu">
       <div class="main-view-item itemI"><img class="icon-game" :src="iconGame" /><span>小游戏</span></div>
-      <div class="main-view-item itemII"><img class="icon-contact" :src="iconContact" /><span>联系我们</span></div>
-      <div class="main-view-item itemIII">
-        <img class="icon-addition" :src="iconAddition" />
+      <div class="main-view-item itemII">
         <a href="/pages/contact/main">
+          <img class="icon-contact" :src="iconContact" />
+          <span>联系我们</span>
+        </a>
+      </div>
+      <div class="main-view-item itemIII">
+        <a href="/pages/juju/main">
+        <img class="icon-addition" :src="iconAddition" />
           <span>发起聚会</span>
         </a>
       </div>
       <div class="main-view-item itemIV"><img class="icon-camera" :src="iconCamera" /><span>美好回忆</span></div>
       <div class="main-view-item itemV"><img class="icon-star" :src="iconStar" /><span>星星</span></div>
       <div class="main-view-item itemVI">
-        <a href="/pages/contact/main">
+        <a href="/pages/fire/main">
           <img class="icon-fire" :src="iconFire" />
           <span>玩火</span>
         </a>
