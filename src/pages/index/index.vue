@@ -12,7 +12,7 @@
       <div class="main-view-item itemII"><img class="icon-contact" :src="iconContact" /><span>联系我们</span></div>
       <div class="main-view-item itemIII"><img class="icon-addition" :src="iconAddition" /><span>发起聚会</span></div>
       <div class="main-view-item itemIV"><img class="icon-camera" :src="iconCamera" /><span>美好回忆</span></div>
-      <div class="main-view-item itemV"><img class="icon-star" :src="iconStar" /><span>星星点灯</span></div>
+      <div class="main-view-item itemV"><img class="icon-star" :src="iconStar" /><span>星星</span></div>
       <div class="main-view-item itemVI">
         <a href="/pages/contact/main">
           <img class="icon-fire" :src="iconFire" />
