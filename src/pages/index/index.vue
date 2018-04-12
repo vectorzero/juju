@@ -10,7 +10,7 @@
     <div class="bot-content" v-if="isShowMenu">
       <div class="main-view-item itemI">盲生</div>
       <div class="main-view-item itemII">你</div>
-      <div class="main-view-item itemIII">现</div>
+      <div class="main-view-item itemIII"><a href="/pages/juju/main">现</a></div>
       <div class="main-view-item itemIV">发</div>
       <div class="main-view-item itemV">了</div>
       <div class="main-view-item itemVI"><a href="/pages/contact/main">华点</a></div>
